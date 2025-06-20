@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: c7i0e1cwp-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: c7i0e1cwp-python 
+  name: c7i0e1cwp-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: c7i0e1cwp-python 
